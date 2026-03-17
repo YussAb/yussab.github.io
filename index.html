@@ -1,27 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Your Name</title>
-  <style>
-    body { font-family: Arial; max-width: 700px; margin: 40px auto; }
-    h1 { margin-bottom: 5px; }
-    a { display: inline-block; margin: 10px 10px 10px 0; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name Surname | Builder</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>Short bio about you.</p>
 
-  <h2>CV</h2>
-  <a href="cv.pdf" target="_blank">Download my CV</a>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-image">
+        <img src="your-photo.jpg" alt="Your Name Surname">
+      </div>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="#">Project 1</a></li>
-    <li><a href="#">Project 2</a></li>
-  </ul>
+      <div class="hero-text">
+        <p class="eyebrow">Open to collaboration • Ventures • New ideas</p>
+        <h1>Your Name Surname</h1>
+        <p class="headline">
+          I explore real problems, shape ambitious ideas, and look for people to build meaningful ventures with.
+        </p>
 
-  <h2>Contact</h2>
-  <p><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></p>
+        <div class="contact-line">
+          <a href="mailto:your@email.com">your@email.com</a>
+        </div>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="mailto:your@email.com?subject=Collaboration">Book a collaboration call</a>
+          <a class="btn btn-secondary" href="#problems">See the problems I’m exploring</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="values section" id="values">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-label">Values</p>
+          <h2>How I think about building</h2>
+          <p>
+            I’m interested in ideas that matter, execution that moves fast, and collaborations with people who care about creating real value.
+          </p>
+        </div>
+
+        <div class="cards three-columns">
+          <article class="card">
+            <h3>Solve real problems</h3>
+            <p>I focus on friction that people already feel, not ideas built only around hype.</p>
+          </article>
+
+          <article class="card">
+            <h3>Build and test quickly</h3>
+            <p>I believe strong ideas get sharper through action, feedback, iteration, and real-world use.</p>
+          </article>
+
+          <article class="card">
+            <h3>Think long term</h3>
+            <p>I’m interested in ventures that can become durable, useful, and meaningful over time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="problems section" id="problems">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-label">Problems</p>
+          <h2>Problems worth solving</h2>
+          <p>
+            These are examples of themes and opportunities I find interesting. This section is meant to start conversations with founders, operators, investors, and collaborators.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="problem-card">
+            <span class="problem-number">01</span>
+            <h3>Hiring still has too much noise</h3>
+            <p>
+              Many companies still rely on low-signal applications, weak screening, and slow hiring flows. I’m interested in better ways to identify talent and match people to opportunities.
+            </p>
+          </article>
+
+          <article class="problem-card">
+            <span class="problem-number">02</span>
+            <h3>Too many workflows are still fragmented</h3>
+            <p>
+              Teams lose time across disconnected tools, repeated tasks, and unclear ownership. I’m interested in systems that simplify execution and decision-making.
+            </p>
+          </article>
+
+          <article class="problem-card">
+            <span class="problem-number">03</span>
+            <h3>People accept broken experiences as normal</h3>
+            <p>
+              In many industries, friction is so common that nobody questions it anymore. I’m interested in overlooked spaces where better products can create clear value fast.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section" id="contact">
+      <div class="container cta-box">
+        <p class="section-label">Call to action</p>
+        <h2>Let’s explore an idea together</h2>
+        <p>
+          If you’re working on similar problems, want to collaborate, or want to hear a pitch around one of these opportunities, reach out.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="mailto:your@email.com?subject=Let%27s%20collaborate">Book a call</a>
+          <a class="btn btn-secondary" href="mailto:your@email.com?subject=Idea%20discussion">Pitch / discuss an idea</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Your Name Surname — Open to entrepreneurial collaboration.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
