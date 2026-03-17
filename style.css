@@ -141,6 +141,15 @@ a {
   font-size: 1.05rem;
 }
 
+/* About */
+.about {
+  background: #ffffff;
+}
+
+.about p {
+  max-width: 720px;
+}
+
 /* VALUES */
 .values {
   background: #f6f3ee;
