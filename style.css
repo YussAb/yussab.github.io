@@ -146,8 +146,12 @@ a {
   background: #ffffff;
 }
 
-.about p {
+.about .section-intro {
   max-width: 720px;
+}
+
+.about .section-intro p {
+  margin-bottom: 16px;
 }
 
 /* VALUES */
