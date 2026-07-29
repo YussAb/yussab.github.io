@@ -3,149 +3,297 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Youssef Abili | Builder</title>
+  <meta
+    name="description"
+    content="Youssef Abili - personal homepage for identity, innovation interests, career, and articles."
+  />
+  <title>Youssef Abili | Ideas, Innovation, Articles</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header class="hero">
-    <div class="container hero-grid">
-      <div class="hero-image">
-        <img src="profile-photo.jpg" alt="Youssef Abili">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="topbar-main">
+        <button class="brand" type="button" data-home-trigger aria-label="Go to homepage">
+          Youssef Abili
+        </button>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          data-menu-toggle
+        >
+          <span aria-hidden="true"></span>
+        </button>
       </div>
 
-      <div class="hero-text">
-        <p class="eyebrow">Open to collaboration • Ventures • New ideas</p>
-        <h1>Youssef Abili</h1>
-        <p class="headline">
-          I explore real problems, shape ambitious ideas, and look for people to build meaningful ventures with.
-        </p>
+      <nav class="topnav" id="site-menu" aria-label="Main navigation" data-mobile-menu>
+        <button class="nav-link" type="button" data-nav-link data-tab-target="who-i-am" aria-controls="who-i-am">
+          Who I am
+        </button>
+        <button class="nav-link" type="button" data-nav-link data-tab-target="innovation" aria-controls="innovation">
+          Innovation
+        </button>
+        <button class="nav-link" type="button" data-nav-link data-tab-target="career" aria-controls="career">
+          Career
+        </button>
+        <button class="nav-link" type="button" data-nav-link data-tab-target="articles" aria-controls="articles">
+          Articles
+        </button>
+      </nav>
+    </header>
 
-        <div class="contact-line">
-          <a href="mailto:abiliyoussef@hotmail.it">abiliyoussef@hotmail.it</a>
+    <main>
+      <section class="home-panel" id="home" data-home-panel>
+        <div class="home-hero">
+          <div class="hero-image">
+            <img src="profile-photo.jpg" alt="Youssef Abili" />
+          </div>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Open to collaboration - ventures - new ideas</p>
+            <h1>Youssef Abili</h1>
+            <p class="headline">
+              I explore real problems, shape ambitious ideas, and look for people to build meaningful ventures with.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:abiliyoussef@hotmail.it?subject=Collaboration">
+                Book a collaboration call
+              </a>
+              <button class="button button-secondary" type="button" data-tab-target="innovation">
+                See innovation themes
+              </button>
+            </div>
+          </div>
         </div>
-           <div class="hero-buttons">
-          <a class="btn btn-primary" href="mailto:abiliyoussef@hotmail.it?subject=Collaboration">Book a collaboration call</a>
-          <a class="btn btn-secondary" href="#problems">See the problems I’m exploring</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="about section" id="about">
-  <div class="container">
-    <div class="section-intro">
-      <p class="section-label">Who I am</p>
-      <h2>A bit about me</h2>
-      <p>
-      I come from a multicultural background, 
-      my life experiences have given me a broad point of view and mindset that I have applied to everything I do.
-      </p>
-      During my studies I achieved a 360 view of biopharma industry. 
-      Starting from basic research to the elaboration of big data on Next-Generation Sequencing 
-      and the economic skills to exploit invention through patents and marketing strategies.
-      </p>
-      <p>
-      I'm really involved in science but on the other side,
-      I continue to cultivate a deep passion for philosophy, art, music and social themes. 
-      I strongly believe that cooperation is the key element to succeed in live.
-      </p>
-    </div>
+
+        <section class="home-options" aria-label="Website sections">
+          <button class="home-card" type="button" data-tab-target="who-i-am">
+            <span class="card-index">01</span>
+            <span class="home-card-title">Who I am</span>
+            <span class="home-card-text">Background, perspective, values, and the way I think about building.</span>
+          </button>
+
+          <button class="home-card" type="button" data-tab-target="innovation">
+            <span class="card-index">02</span>
+            <span class="home-card-title">Innovation</span>
+            <span class="home-card-text">Problems worth solving and spaces where new ventures can create value.</span>
+          </button>
+
+          <button class="home-card" type="button" data-tab-target="career">
+            <span class="card-index">03</span>
+            <span class="home-card-title">Career</span>
+            <span class="home-card-text">A section to expand with roles, projects, milestones, and future direction.</span>
+          </button>
+
+          <button class="home-card" type="button" data-tab-target="articles">
+            <span class="card-index">04</span>
+            <span class="home-card-title">Articles</span>
+            <span class="home-card-text">A home for essays, reflections, and a direct path to future Medium posts.</span>
+          </button>
+        </section>
+      </section>
+
+      <section class="tabs-section" aria-live="polite">
+        <article class="tab-panel" id="who-i-am" data-tab-panel hidden>
+          <div class="section-heading">
+            <p class="section-label">Who I am</p>
+            <h2>A multicultural builder with a scientific and humanistic lens.</h2>
+          </div>
+
+          <div class="content-grid">
+            <section class="text-block">
+              <p>
+                I come from a multicultural background. My life experiences have given me a broad point of view and a mindset that I apply to everything I do.
+              </p>
+              <p>
+                During my studies I achieved a 360 degree view of the biopharma industry, from basic research to big data analysis on Next-Generation Sequencing, patents, and marketing strategies.
+              </p>
+              <p>
+                I am deeply involved in science, while continuing to cultivate a strong passion for philosophy, art, music, and social themes. I believe cooperation is one of the key elements for a meaningful life and lasting success.
+              </p>
+            </section>
+
+            <aside class="signal-panel" aria-label="Personal focus">
+              <p class="signal-label">Current direction</p>
+              <p>
+                Building bridges between science, technology, entrepreneurship, and culture.
+              </p>
+              <a href="mailto:abiliyoussef@hotmail.it">abiliyoussef@hotmail.it</a>
+            </aside>
+          </div>
+
+          <section class="values-area">
+            <div class="section-subheading">
+              <p class="section-label">Values</p>
+              <h3>How I think about building</h3>
+            </div>
+
+            <div class="value-grid">
+              <article class="value-card">
+                <h4>Solve real problems</h4>
+                <p>I focus on friction that people already feel, not ideas built only around hype.</p>
+              </article>
+
+              <article class="value-card">
+                <h4>Build and test quickly</h4>
+                <p>Strong ideas get sharper through action, feedback, iteration, and real-world use.</p>
+              </article>
+
+              <article class="value-card">
+                <h4>Think long term</h4>
+                <p>I am interested in ventures that can become durable, useful, and meaningful over time.</p>
+              </article>
+            </div>
+          </section>
+        </article>
+
+        <article class="tab-panel" id="innovation" data-tab-panel hidden>
+          <div class="section-heading">
+            <p class="section-label">Innovation</p>
+            <h2>Problems worth solving</h2>
+            <p>
+              These are themes and opportunities I find interesting. They are meant to engage collaborators, founders, and investors.
+            </p>
+          </div>
+
+          <div class="problem-grid">
+            <article class="problem-card">
+              <span class="card-index">01</span>
+              <h3>Cognitive health in the age of AI</h3>
+              <p>
+                As screen time and the use of AI increase, people experience more difficulty focusing, remembering information, and managing mental fatigue.
+              </p>
+              <p>
+                There are still few tools that help individuals understand and control how technology affects their cognitive health.
+              </p>
+            </article>
+
+            <article class="problem-card">
+              <span class="card-index">02</span>
+              <h3>The healthy living gap</h3>
+              <p>
+                People know what it means to live healthy, but struggle to act on it consistently.
+              </p>
+              <p>
+                Daily routines, limited time, and competing priorities make healthy behaviors difficult to sustain.
+              </p>
+            </article>
+
+            <article class="problem-card">
+              <span class="card-index">03</span>
+              <h3>The hidden value of older adults</h3>
+              <p>
+                Older adults represent a growing and often overlooked resource in society.
+              </p>
+              <p>
+                Their experience, knowledge, and available time are still underused because there are limited systems that enable them to actively contribute.
+              </p>
+            </article>
+          </div>
+
+          <section class="callout-band">
+            <p class="section-label">Collaboration</p>
+            <h3>Have a related problem space in mind?</h3>
+            <p>
+              I am open to conversations with people exploring science, health, AI, culture, and venture creation.
+            </p>
+            <a class="button button-primary" href="mailto:abiliyoussef@hotmail.it?subject=Innovation%20conversation">
+              Start a conversation
+            </a>
+          </section>
+        </article>
+
+        <article class="tab-panel" id="career" data-tab-panel hidden>
+          <div class="section-heading">
+            <p class="section-label">Career</p>
+            <h2>A living career page to expand over time.</h2>
+            <p>
+              This section is structured so you can later add roles, projects, milestones, publications, and selected achievements.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-marker"></span>
+              <div>
+                <h3>Biopharma and bioinformatics</h3>
+                <p>
+                  Experience across molecular biotechnology, Next-Generation Sequencing data, and the scientific foundations behind translational work.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-marker"></span>
+              <div>
+                <h3>Technology transfer and venture thinking</h3>
+                <p>
+                  Interest in turning inventions into practical value through patents, market strategy, and collaborations between science and entrepreneurship.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-marker"></span>
+              <div>
+                <h3>Next additions</h3>
+                <p>
+                  Add detailed career milestones, selected projects, education, talks, and a downloadable CV when you are ready.
+                </p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="tab-panel" id="articles" data-tab-panel hidden>
+          <div class="section-heading">
+            <p class="section-label">Articles</p>
+            <h2>Essays and reflections will live here.</h2>
+            <p>
+              A place for writing on innovation, science, AI, culture, and the human questions behind technology.
+            </p>
+          </div>
+
+          <nav class="article-tabs" aria-label="Article destinations">
+            <a class="article-tab is-active" href="#articles" data-tab-target="articles">
+              Website notes
+            </a>
+            <a class="article-tab" href="https://medium.com/" target="_blank" rel="noreferrer">
+              Medium
+            </a>
+          </nav>
+
+          <div class="article-grid">
+            <article class="article-card">
+              <p class="article-status">Coming soon</p>
+              <h3>Technology and cognitive health</h3>
+              <p>Reflections on focus, attention, and mental energy in an AI-driven environment.</p>
+            </article>
+
+            <article class="article-card">
+              <p class="article-status">Coming soon</p>
+              <h3>From research to venture building</h3>
+              <p>Notes on how scientific ideas can become useful products, teams, and companies.</p>
+            </article>
+
+            <article class="article-card">
+              <p class="article-status">Coming soon</p>
+              <h3>Culture, ethics, and innovation</h3>
+              <p>Writing on the social and philosophical layers behind progress.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Youssef Abili - open to entrepreneurial collaboration.</p>
+    </footer>
   </div>
-</section>
-    <section class="values section" id="values">
-      <div class="container">
-        <div class="section-intro">
-          <p class="section-label">Values</p>
-          <h2>How I think about building</h2>
-          <p>
-            I’m interested in ideas that matter, execution that moves fast, and collaborations with people who care about creating real value.
-          </p>
-        </div>
 
-        <div class="cards three-columns">
-          <article class="card">
-            <h3>Solve real problems</h3>
-            <p>I focus on friction that people already feel, not ideas built only around hype.</p>
-          </article>
-
-          <article class="card">
-            <h3>Build and test quickly</h3>
-            <p>I believe strong ideas get sharper through action, feedback, iteration, and real-world use.</p>
-          </article>
-
-          <article class="card">
-            <h3>Think long term</h3>
-            <p>I’m interested in ventures that can become durable, useful, and meaningful over time.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="problems section" id="problems">
-      <div class="container">
-        <div class="section-intro">
-          <p class="section-label">Problems</p>
-          <h2>Problems worth solving</h2>
-          <p>
-            These are themes and opportunities I find interesting. They’re meant to engage collaborators, founders, and investors.
-          </p>
-        </div>
-
-        <div class="cards">
-          <article class="problem-card">
-            <span class="problem-number">01</span>
-            <h3>Cognitive Health in the Age of AI</h3>
-            <p>
-              As screen time and use of AI increase, people are experiencing more difficulty focusing, remembering information, and managing mental fatigue. 
-              However, there are still very few tools that help individuals understand and control how technology affects their cognitive health, creating a growing and largely unmet need.
-            </p>
-          </article>
-
-          <article class="problem-card">
-            <span class="problem-number">02</span>
-            <h3>The Healthy Living Gap</h3>
-            <p>
-              People know what it means to live healthy, but struggle to act on it consistently. 
-              Daily routines, limited time, and competing priorities make healthy behaviors difficult to sustain. 
-              Existing solutions focus on awareness, not execution, leaving a large gap between intention and action and driving preventable long-term health problems.
-            </p>
-          </article>
-
-          <article class="problem-card">
-            <span class="problem-number">03</span>
-            <h3>The Hidden Value of Older Adults</h3>
-            <p>
-              Older adults represent a growing and often overlooked resource in society. 
-              They possess valuable experience, knowledge, and, in many cases, available time. 
-              However, there are limited opportunities and systems that enable them to actively contribute and create value, leading to a significant underutilization of their potential.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta section" id="contact">
-      <div class="container cta-box">
-        <p class="section-label">Call to action</p>
-        <h2>Let’s explore an idea together</h2>
-        <p>
-          If you’re working on similar problems, want to collaborate, or want to hear a pitch around one of these opportunities, reach out.
-        </p>
-
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="mailto:abiliyoussef@hotmail.it?subject=Let%27s%20collaborate">Book a call</a>
-          <a class="btn btn-secondary" href="mailto:abiliyoussef@hotmail.it?subject=Idea%20discussion">Pitch / discuss an idea</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>Youssef Abili — Open to entrepreneurial collaboration.</p>
-    </div>
-  </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
